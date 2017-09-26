@@ -1,0 +1,34 @@
+  html,body {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            }  
+        .swiper-wrapper .swiper-slide {
+             width: 100%;
+             height: 100%;
+             color: white;
+        }
+        .first {
+            background: red;
+        }
+        .second {
+            background: black;
+        }
+        .third {
+            background: blue;
+        }
+        .four {
+            background: orange;
+        }
+        .five {
+            background: yellowgreen;
+        }
+        .six {
+            background: greenyellow;
+        }
+        .seven {
+            background: orangered;
+        }

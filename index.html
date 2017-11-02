@@ -16,13 +16,16 @@
 <body>
  <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide first">Slide 1</div>
+        <div class="swiper-slide first">
+            <img src="images/bg-tm.png"  class = "first-bg-image"alt="">
+
+        </div>
         <div class="swiper-slide second">Slide 2</div>
         <div class="swiper-slide third">Slide 3</div>
         <div class="swiper-slide four">Slide 4</div>
         <div class="swiper-slide five">Slide 5</div>
-         <div class="swiper-slide six">Slide 6</div>
-          <div class="swiper-slide seven">Slide 7</div>
+        <div class="swiper-slide six">Slide 6</div>
+        <div class="swiper-slide seven">Slide 7</div>
     </div>
     <!-- 如果需要分页器 -->
      <div class="swiper-pagination"></div> 
@@ -32,7 +35,7 @@
     <div class="swiper-button-next"></div> -->
     
     <!-- 如果需要滚动条 -->
-     <div class="swiper-scrollbar"></div> 
+     <!-- <div class="swiper-scrollbar"></div>  -->
 </div>
    <script src = "javascript/swiper.min.js"></script>
     <script src = "javascript/swiper.animate.min.js"></script>
@@ -54,6 +57,13 @@
     // prevButton: '.swiper-button-prev',
     
     // 如果需要滚动条
+    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+    swiperAnimateCache(swiper); //隐藏动画元素 
+    swiperAnimate(swiper); //初始化完成开始动画
+  }, 
+  onSlideChangeEnd: function(swiper){ 
+    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+  } 
    
   })        
     </script>

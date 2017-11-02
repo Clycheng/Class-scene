@@ -11,24 +11,64 @@
              height: 100%;
              color: white;
         }
-        .first {
-            background: red;
+             @media (min-width:320px) and (max-width:560px) {
+            .swiper-slide {
+            background-image:url("../images/bottom-bg.gif");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+         }
+            .first-bg-image {
+                width: 100%;
+                height: 100%;
+            } 
         }
-        .second {
-            background: black;
+        @media (min-width:360px) and (max-width:640px) {
+            .swiper-slide {
+            background-image:url("../images/bottom-bg.gif");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+         }
+            .first-bg-image {
+                width: 100%;
+                height: 100%;
+            } 
         }
-        .third {
-            background: blue;
+          @media (min-width:412px) and (max-width:732px) {
+            .swiper-slide {
+            background-image:url("../images/bottom-bg.gif");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+         }
+            .first-bg-image {
+                width: 100%;
+                height: 100%;
+            } 
         }
-        .four {
-            background: orange;
+         @media (min-width:768px) and (max-width:1024px) {
+            .swiper-slide {
+            background-image:url("../images/bottom-bg.gif");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+         }
+            .first-bg-image {
+                width: 100%;
+                height: 100%;
+            } 
         }
-        .five {
-            background: yellowgreen;
+         @media (min-width:1024px) and (max-width:1366px) {
+            .first {
+            background-image:url("../images/bottom-bg.gif");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+         }
+            .first-bg-image {
+                width: 100%;
+                height: 100%;
+            } 
         }
-        .six {
-            background: greenyellow;
-        }
-        .seven {
-            background: orangered;
-        }
+        
+        /* .first-bg-image {
+            width: 100%;
+            height: 100%;
+        } */
+      
